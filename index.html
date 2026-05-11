@@ -593,7 +593,7 @@ function renderCards(){
       <div class="card-footer">
         <div class="card-location">📍 ${d.loc}</div>
         <div class="card-actions">
-          <div class="card-comment-btn" onclick="toggleComments('${d.id}',this)">💬 ${commentCount>0?commentCount:''}</div>
+          <div class="card-comment-btn" onclick="toggleComments('${d.id}',this)">💬</div>
           <div class="card-trust">★ ${d.trust||5.0}</div>
           ${isOwn?`<div class="card-delete" onclick="deletePost('${d.id}',event)">削除</div>`:''}
         </div>
