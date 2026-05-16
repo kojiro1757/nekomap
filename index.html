@@ -51,7 +51,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:0 1
 .sighting-list{flex:1;overflow-y:auto;padding:8px;display:flex;flex-direction:column;gap:6px}
 .sighting-list::-webkit-scrollbar{width:4px}
 .sighting-list::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-.card{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:12px;cursor:pointer;transition:border-color 0.2s;position:relative;overflow:hidden}
+.card{background:var(--surface2);border:1.5px solid var(--border);border-radius:10px;padding:12px;cursor:pointer;transition:border-color 0.2s;position:relative;overflow:visible}
 .card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:2px 0 0 2px}
 .card.type-lost::before{background:var(--red)}.card.type-wild::before{background:var(--blue)}.card.type-protected::before{background:var(--green)}
 .card:hover{border-color:var(--accent)}
