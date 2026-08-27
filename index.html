@@ -249,7 +249,7 @@ textarea{height:72px}
 import{initializeApp}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import{getFirestore,collection,addDoc,onSnapshot,query,orderBy,serverTimestamp,deleteDoc,doc,getDocs}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 import{getAuth,GoogleAuthProvider,signInWithPopup,onAuthStateChanged,signOut as fbSignOut}from"https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-const firebaseConfig={apiKey:"AIzaSyC6i63nErkPtYDNqo-uhxzpNfwurpH4q9k",authDomain:"nekomap-870a6.firebaseapp.com",projectId:"nekomap-870a6",storageBucket:"nekomap-870a6.firebasestorage.app",messagingSenderId:"725076410514",appId:"1:725076410514:web:0a298b3c0700389adea64b"};
+const firebaseConfig={apiKey:"AIzaSyAdDWnpywWDc4CjdvfxxDaUolC1lhQSiEw",authDomain:"nekomap-870a6.firebaseapp.com",projectId:"nekomap-870a6",storageBucket:"nekomap-870a6.firebasestorage.app",messagingSenderId:"725076410514",appId:"1:725076410514:web:0a298b3c0700389adea64b"};
 const app=initializeApp(firebaseConfig);
 const db=getFirestore(app);
 const auth=getAuth(app);
@@ -352,7 +352,7 @@ window.openModal=openModal;window.closeModal=closeModal;window.selectType=select
 const q=query(collection(db,'sightings'),orderBy('createdAt','desc'));
 onSnapshot(q,(snapshot)=>{DATA=snapshot.docs.map(doc=>({id:doc.id,...doc.data()}));render()});
 </script>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfEWun2cXbM7ezFBOl0cTyiugYdrENO6g&libraries=marker&callback=initMap"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdDWnpywWDc4CjdvfxxDaUolC1lhQSiEw&libraries=marker&callback=initMap"></script>
 </body>
 </html>
 
